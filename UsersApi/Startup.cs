@@ -28,8 +28,6 @@ namespace UsersApi
             services.AddSingleton<IUsersDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<UsersDatabaseSettings>>().Value);
 
-            services.AddSingleton<DatabaseMock>();
-
             services.AddTransient<IUsersStorage, DatabaseMock>();
 
             services.AddControllers();
