@@ -7,6 +7,7 @@ using Microsoft.Extensions.Options;
 using UsersApi.Interfaces;
 using UsersApi.Mocks;
 using UsersApi.Models;
+using UsersBL.Interfaces;
 
 namespace UsersApi
 {

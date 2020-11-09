@@ -2,6 +2,7 @@
 using MongoDB.Driver;
 using UsersApi.Interfaces;
 using UsersApi.Models;
+using UsersBL.Interfaces;
 
 namespace UsersApi.Mocks
 {

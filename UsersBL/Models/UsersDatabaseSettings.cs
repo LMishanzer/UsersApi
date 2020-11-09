@@ -1,12 +1,7 @@
-﻿namespace UsersApi.Models
-{
-    public interface IUsersDatabaseSettings
-    {
-        string UsersCollectionName { get; set; }
-        string ConnectionString { get; set; }
-        string DatabaseName { get; set; }
-    }
+﻿using UsersBL.Interfaces;
 
+namespace UsersApi.Models
+{
     public class UsersDatabaseSettings : IUsersDatabaseSettings
     {
         public string UsersCollectionName { get; set; }

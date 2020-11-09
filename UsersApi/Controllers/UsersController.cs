@@ -39,16 +39,15 @@ namespace UsersApi.Controllers
             return _users.InsertUser(user);
         }
 
-        // POST <UsersController>
-        [HttpPost("{id}")]
+        // PUT <UsersController>
+        [HttpPost("{id}/update")]
         public void Update(string id, User user)
         {
             _users.UpdateUser(id, user);
         }
 
         // DELETE <UsersController>
-        [HttpDelete]
-        [HttpDelete("{id}")]
+        [HttpPost("{id}/delete")]
         public void Delete(string id)
         {
             _users.DeleteUser(id);
